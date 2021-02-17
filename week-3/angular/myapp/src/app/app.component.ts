@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'myapp';
+  age = '';
+  // DisplayAge() {
+  //   let age = age 
+  // }
+
+  todos= [' eat breakfast', 'shower ', 'code']
+  imageShows= false;
+  displayImage(){
+    this.imageShows = true;
+  }
 }
+
