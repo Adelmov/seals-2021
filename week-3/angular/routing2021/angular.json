@@ -1,14 +1,21 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": "c78ae69e-7a37-482c-8eed-4b14a86a9c27"
+    "analytics": "1faea7b2-f4f6-4fad-80e9-65508701888d"
   },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "todos": {
+    "routing2021": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        },
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -16,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/todos",
+            "outputPath": "dist/routing2021",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -27,7 +34,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -49,13 +56,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "6kb",
-                  "maximumError": "10kb"
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
                 }
               ]
             }
@@ -64,18 +71,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "todos:build"
+            "browserTarget": "routing2021:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "todos:build:production"
+              "browserTarget": "routing2021:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "todos:build"
+            "browserTarget": "routing2021:build"
           }
         },
         "test": {
@@ -90,7 +97,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           }
@@ -112,16 +119,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "todos:serve"
+            "devServerTarget": "routing2021:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "todos:serve:production"
+              "devServerTarget": "routing2021:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "todos"
+  "defaultProject": "routing2021"
 }

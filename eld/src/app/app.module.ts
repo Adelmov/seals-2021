@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { Router } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { LeveloneComponent } from './levelone/levelone.component';
 import { LeveltwoComponent } from './leveltwo/leveltwo.component';
 import { LevelthreeComponent } from './levelthree/levelthree.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { LevelthreeComponent } from './levelthree/levelthree.component';
     MenuComponent,
     LeveloneComponent,
     LeveltwoComponent,
-    LevelthreeComponent
+    LevelthreeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

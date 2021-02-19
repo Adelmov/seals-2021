@@ -3,16 +3,19 @@ import { RouterModule, Routes } from '@angular/router';
 import { LeveloneComponent} from './levelone/levelone.component';
 import { LeveltwoComponent} from './leveltwo/leveltwo.component';
 import { LevelthreeComponent} from './levelthree/levelthree.component';
-import { MenuComponent } from './menu/menu.component'
-
+import { MenuComponent } from './menu/menu.component';
+import { AppComponent } from './app.component'
 
 const routes: Routes = [
+  {
+    path: '', component:AppComponent 
+  },
 
   {
-    path:'menu', component:MenuComponent
+    path:'menu', component: MenuComponent
   },
   {
-    path:'level1', component:LeveloneComponent
+    path:'level1', component: LeveloneComponent
   },
   {
     path:'level2', component: LeveltwoComponent

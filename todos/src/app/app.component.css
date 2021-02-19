@@ -1,0 +1,19 @@
+li {
+    color: black;
+    background-color: gold;
+}
+#bg-color{
+    background-color: lightblue;
+}
+input {
+    text-align: center;
+    
+}
+div {
+    text-align: center;
+}
+button {
+    width: 100px;
+    height: 25px;
+    background-color: cornflowerblue;
+}
