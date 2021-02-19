@@ -4,13 +4,9 @@ import { LeveloneComponent} from './levelone/levelone.component';
 import { LeveltwoComponent} from './leveltwo/leveltwo.component';
 import { LevelthreeComponent} from './levelthree/levelthree.component';
 import { MenuComponent } from './menu/menu.component';
-import { AppComponent } from './app.component'
+
 
 const routes: Routes = [
-  {
-    path: '', component:AppComponent 
-  },
-
   {
     path:'menu', component: MenuComponent
   },
