@@ -60,6 +60,9 @@
       <li class="nav-item">
         <a class="nav-link" href="level2"> Level Two</a>
       </li>
+      <li class="nav-item"> 
+        <a class="nav-link" href="level3">Level Three</a>
+      </li>
     </ul>
   </div>
 </nav>
@@ -69,12 +72,78 @@
   <div class="container">
       <div class="row">
           <div class="col-sm-8 offset-sm-2">
-            <h1 hidden="true"> Hello it's the creator of Learn Zone </h1>
-              
+            <h1 > Hello it's the creator of Learn Zone.</h1>
+            <p> I decide to make this app, to help my mother learn english, in future updates I am planing on adding more vocabulary and more complex features of for the app. I hope you enjoy it and Learn new words or sentences.</p> 
           </div>
       </div>
   </div>
 </div>
+<div class="level2-container">
+<h2> Welcome to Level Two of Learn Zone</h2>
+<div id="lvl2-complete-the-sentence"> 
+    <p> In this level you will type the correct to complete the sentence of the image of above</p>
+    <div class= "sentence-level-1">
+        <img src= "https://image.freepik.com/free-vector/illustration-cute-boy-girl-playing-basketball_181099-53.jpg">
+        <input type= "text" [(ngModel)]='complete'/>
+        <button (click)="completeSentence()"> Complete Sentence </button>
+
+        <p>The boy and the<span *ngFor= "let item of sentence" > {{item}} </span>are playing basketball</p>
+    </div>
+</div>
+    <div id="lvl2-complete-the-sentence"> 
+
+        <div class= "sentence-level-1">
+            <img src= "https://thumbs.dreamstime.com/z/print-192849739.jpg">
+            <input type= "text" [(ngModel)]='complete2'/>
+            <button (click)="compSen()"> Complete Sentence </button>
+    
+            <p>The boy is "<span *ngFor= "let item2 of sentence2" > {{item2}} </span>"coffee</p>
+        </div>
+    
+    </div>
+
+    <div id="lvl2-complete-the-sentence"> 
+
+      <div class= "sentence-level-1">
+          <img src= "https://content.fortune.com/wp-content/uploads/2016/05/playdate_dog.png">
+          <input type= "text" [(ngModel)]='complete3'/>
+          <button (click)="compSen3()"> Complete Sentence </button>
+  
+          <p>The dog is "<span *ngFor= "let item3 of sentence3" > {{item3}} </span>"with a ball</p>
+      </div>
+  
+  </div>
+  <div id="lvl2-complete-the-sentence"> 
+
+    <div class= "sentence-level-1">
+        <img src= "https://www.verywellfit.com/thmb/jWAlp4MVAXi6gZPxjg-h8PHdI9k=/1500x1142/filters:fill(FFDB5D,1)/Snapwire-Running-17-38ab6267e82c41a0b03b66469087aefb.jpg">
+        <input type= "text" [(ngModel)]='complete4'/>
+        <button (click)="compSen4()"> Complete Sentence </button>
+
+        <p>The woman is"<span *ngFor= "let item4 of sentence4" > {{item4}} </span>" </p>
+    </div>
+
+</div>
+</div>
+<div class="lvl3-container">
+  <h2> Welcome to Level Three of Learn Zone</h2>
+  <div class="lvl3-writing">
+    <h4>In this Level is your turn to show what you have learn</h4>
+    <h4> You have to write a complete sentence based on what you see on the image</h4>
+    <div class="writting-complete">
+      <img src=" https://cdn2.vectorstock.com/i/1000x1000/71/61/cartoon-boy-swimmer-in-swimming-pool-vector-21457161.jpg">
+      <input type ="text" [(ngModel)] = 'writing1'/>
+      <button (click)="writing()"> Show Complete Sentence</button>
+      <p *ngFor= "let item of inwriting1">{{item}}</p>
+    </div>
+
+
+
+  </div>
+
+
+</div>
+
 <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

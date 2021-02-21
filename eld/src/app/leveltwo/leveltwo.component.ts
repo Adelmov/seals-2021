@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
-@Component({
+
+@Component ({
   selector: 'app-leveltwo',
   templateUrl: './leveltwo.component.html',
   styleUrls: ['./leveltwo.component.scss']
 })
-export class LeveltwoComponent implements OnInit {
+export class LeveltwoComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+   
 
 }

@@ -1,19 +1,16 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": "1faea7b2-f4f6-4fad-80e9-65508701888d"
+    "analytics": false
   },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "routing2021": {
+    "routing-examle": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
-        },
-        "@schematics/angular:application": {
-          "strict": true
         }
       },
       "root": "",
@@ -23,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/routing2021",
+            "outputPath": "dist/routing-examle",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -56,13 +53,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
                 }
               ]
             }
@@ -71,18 +68,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "routing2021:build"
+            "browserTarget": "routing-examle:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "routing2021:build:production"
+              "browserTarget": "routing-examle:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "routing2021:build"
+            "browserTarget": "routing-examle:build"
           }
         },
         "test": {
@@ -119,16 +116,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "routing2021:serve"
+            "devServerTarget": "routing-examle:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "routing2021:serve:production"
+              "devServerTarget": "routing-examle:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "routing2021"
+  "defaultProject": "routing-examle"
 }
