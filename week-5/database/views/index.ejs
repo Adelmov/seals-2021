@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Data Base</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>This is my database test</h1>
+
+  <ul >
+  <% for(var i=0; i<users.length; i++) {%>
+    <li class="user">
+      <span><%= users[i].name %></span>
+      <span><%= users[i].lastname %></span>
+      <span><%= users[i].age %></span>
+      <span><%= users[i].hobbies %></span>
+      <span><%= users[i].user %></span>
+      
+    </li>
+  <% } %>
+  </ul>
+
+  <h2>Add User</h2>
+
+  <form action="/users" method="POST">
+    <input type="text" placeholder="name" name="name">
+    <input type="text" placeholder="lastname" name="lastname">
+    <input type="text" placeholder= "age" name="age">
+    <input type ="text" placeholder="hobbies" name="hobbies">
+    <input type = "text" placeholder="user" name="user">
+    <button type="submit">Submit</button>
+  </form>
+
+  <div>
+    <h2>Replace last username upload by me with the default one</h2>
+    <button id="update"> Replace! </button>
+  </div>
+
+  <div>
+    <h2>Delete First User</h2>
+    <button id="delete"> Delete first</button>
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
